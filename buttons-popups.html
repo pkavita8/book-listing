@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      .main {
+        margin: auto;
+      }
+      .row-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 400px;
+        margin: auto;
+        margin-top: 20%;
+      }
+      .option {
+        width: 35%;
+        outline: none;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        padding: 12px;
+        cursor: pointer;
+      }
+      .yes {
+        background-color: #4be373;
+        }
+      .no {
+         background-color: #d7263d;
+       }
+    </style>
+  </head>
+  <body>
+    <main>
+        <div className="row-center">
+            <button className="option no">No</button>
+            <button className="option yes">Yes</button>
+          </div>
+        </main>
+        </body>
+</html>

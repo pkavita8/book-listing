@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        color: #989898;
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0px;
+      }
+      main {
+        /* max-width: 400px; */
+       margin: 16px;
+      }
+      .header {
+        border-top: 2px solid #008ebb;
+        border-bottom: 1px solid #008ebb;
+      }
+      .header > h3 {
+        text-align: center;
+        color: #008ebb;
+        font-weight: 800;
+      }
+      .email-input {
+        padding: 14px 8px;
+        border: 0.1px solid #008ebb;
+        border-radius: 6px;
+        margin-top: 12px;
+        width: 100%;
+        font-weight: 500;
+      }
+      .submit-btn-container {
+        background-color: #008ebb;
+        border-radius: 6px;
+        padding: 8px;
+        margin-top: 12px;
+      }
+      .submit-btn {
+        cursor: pointer;
+        background-color: #81ddf9;
+        border-radius: 4px;
+        width: 100%;
+        color: white;
+        font-weight: bolder;
+        font-size: 16px;
+        text-shadow: 1px 1px black;
+        border: none;
+        outline: none;
+        padding: 12px;
+        box-shadow: 0px 3px 5px 0px rgba(4, 4, 4, 0.654);
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(4, 4, 4, 0.654);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(4, 4, 4, 0.654);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div className="header">
+        <h3>FREE EMAIL NEWSLETTER</h3>
+      </div>
+      <p>Let About.com send you the latest from our Neurology Expert</p>
+      <form>
+        <input
+          type="checkbox"
+          id="treatment"
+          name="treatment"
+          value="treatment"
+        />
+        <label for="treatment"> Treatment Options</label><br />
+        <input
+          type="checkbox"
+          id="specialty"
+          name="specialty"
+          value="specialty"
+        />
+        <label for="specialty"> Specialty Information</label><br />
+
+        <input
+          className="email-input"
+          type="text"
+          name="email"
+          placeholder="Your email address"
+        />
+        <div className="submit-btn-container">
+          <button className="submit-btn">SIGN UP</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
